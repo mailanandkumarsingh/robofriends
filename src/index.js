@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import { searchRobots } from "./reducer";
+import { createStore, applyMiddleware, combineReducers } from "redux";
+import { searchRobots, requestRobots } from "./reducer";
 import { createLogger } from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
 import "./index.css";
 import App from "./containers/App";
 
@@ -13,8 +14,10 @@ import "tachyons";
 const logger = createLogger();
 // Create the Store(The object level source of truth, the state tree)
 
+//RootReducer
+const rootReducer = combineReducers({searchRobots, requestRobots});
 // createStore(rootReducer, applyMiddleware)
-const store = createStore(searchRobots, applyMiddleware(logger)); 
+const store = createStore(rootReducer, applyMiddleware(logger, thunkMiddleware)); 
 
 //Create a store using the RootReducer, but since
 // we just one reducer for now we are going to use that as the rootReducer.
