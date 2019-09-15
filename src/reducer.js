@@ -1,12 +1,12 @@
 import {CHANGE_SEARCHFIELD}from './constants';
 
 // Initial Store
-const initialState = {
+const initialSearchState = {
     searchField: ''
 };
 
-export const searchRobots = (state=initialState, action={}) => {
-    console.log('What is action type ', action && action.type);
+export const searchRobots = (state=initialSearchState, action={}) => {
+    // console.log('What is action type ', action && action.type);
     switch(action.type){
         case CHANGE_SEARCHFIELD: 
             return Object.assign({}, state, {searchField: action.payload});
@@ -14,3 +14,4 @@ export const searchRobots = (state=initialState, action={}) => {
             return state;
     }
 }
+
