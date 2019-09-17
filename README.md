@@ -11,3 +11,7 @@ REDUX LOGGER - LOGGING MIDDLEWARE for ACTION TRANSITIONS
 yarn eject - to modify few webpack files.
 
 tachyons for styling
+
+PWA 
+
+![Lighthouse](perf.png)
