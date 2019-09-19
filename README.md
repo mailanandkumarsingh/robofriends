@@ -14,4 +14,12 @@ tachyons for styling
 
 PWA 
 
+Jest - Testing framework
+
+Enzyme for React
+
+Functional Component Snapshot testing
+
+Enzyme Statefull component testing
+
 ![Lighthouse](perf.png)

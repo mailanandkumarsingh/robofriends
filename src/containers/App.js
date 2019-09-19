@@ -35,7 +35,7 @@ export class App extends Component {
         });
 
         return (
-            <div className="tc">
+            <div className="tc" id="roboContainer">
                 <h1>Robo Friends</h1>
                 <SearchField onSearchFieldChange={this.props.onSearchFieldChange}/>
                 <CarList robots={filteredRobot}/>
