@@ -22,4 +22,6 @@ Functional Component Snapshot testing
 
 Enzyme Statefull component testing
 
+Devops - Circle CI
+
 ![Lighthouse](perf.png)
