@@ -25,3 +25,7 @@ Enzyme Statefull component testing
 Devops - Circle CI
 
 ![Lighthouse](perf.png)
+
+![CircleCI](circleci.png)
+
+![Pipeline - Commits](pipeline.png)
